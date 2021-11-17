@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="main-table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Row</th>
+                        <th id='table-uid'>UID</th>
+                        <th id="table-fname">First Name</th>
+                        <th id="table-lname">Last Name</th>
+                        <th id="table-city">City</th>
+                        <th id="table-pcode">Postal Code</th>
+                        <th id="table-pnumber">Phone Number</th>
+                        <th id="table-position">Position</th>
+                    </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+            </table>
+            <div class="tools">
+                <span class="tool-box">
+                    Open Tool Box
+                </span>
+                <span class="edit-enabler">
+                    Enable Editing
+                </span>
+            </div>
+        </div>
+        <div class="editing-form">
+            <i class="fas fa-times"></i>
+            <div class="panel">  
+                <table>
+                    <tr>
+                        <th>UID :</th>
+                        <td><input type="text" name="uid" id="uid" class="edit-input 0"></td>
+                    </tr>
+                    <tr>
+                        <th>First Name :</th>
+                        <td><input type="text" name="first-name" id="first-name" class="edit-input 1"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name :</th>
+                        <td><input type="text" name="last-name" id="last-name" class="edit-input 2"></td>
+                    </tr>
+                    <tr>
+                        <th>City :</th>
+                        <td><input type="text" name="city" id="city" class="edit-input 3"></td>
+                    </tr>
+                    <tr>
+                        <th>Postal Code :</th>
+                        <td><input type="text" name="postal-code" id="postal-code" class="edit-input 4"></td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number :</th>
+                        <td><input type="text" name="phone-number" id="phone-number" class="edit-input 5"></td>
+                    </tr>
+                    <tr>
+                        <th>Position :</th>
+                        <td><input type="text" name="position" id="position" class="edit-input 6"></td>
+                    </tr>
+                </table>
+                <div>
+                    <button id="add">Add</button>
+                    <button id="edit">Edit</button>
+                    <button id="remove">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./userData.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

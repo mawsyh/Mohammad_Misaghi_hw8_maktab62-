@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cdc1ff;
+  background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+  font-family: "Montserrat";
+  height: 100vh;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+th {
+  background-color: #2e2e2e;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.main-table {
+  display: inline;
+  margin: 0 auto;
+  width: auto;
+}
+
+#table {
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-table th {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#table-data.active tr:hover {
+  cursor: pointer;
+  background-color: #b39f9f71;
+  transition: 0.2s ease;
+}
+
+.main-table tr:nth-child(odd) {
+  background-color: #b9b9b9;
+}
+
+.tools {
+  display: flex;
+  margin-top: 80px;
+}
+
+.tool-box,
+.edit-enabler {
+  display: flex;
+  width: 300px;
+  height: 90px;
+  margin-right: 15px;
+  border-radius: 25px;
+  background-color: rgb(98, 37, 155);
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(214, 212, 212);
+  font-weight: bold;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.edit-enabler {
+  background-color: rgb(69, 122, 182);
+}
+
+.tool-box:hover {
+  background-color: rgb(192, 67, 171);
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+
+.edit-enabler:hover {
+  background-color: rgb(120, 199, 202);
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+
+.editing-form {
+  width: 600px;
+  height: 550px;
+  background-color: rgb(198, 248, 252);
+  position: fixed;
+  top: 150px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  opacity: 1;
+  padding: 1rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+
+.editing-form.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.editing-form.active i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.panel {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel input {
+  padding: 0.3rem;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+}
+
+.panel input:focus {
+  outline: none;
+}
+
+.panel th {
+  background-color: rgb(1, 47, 85);
+}
+
+.panel td {
+  padding: 0.2rem;
+}
+
+.panel button {
+  margin: 30px 15px;
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: rgba(19, 150, 173, 0.5);
+  color: rgb(16, 44, 66);
+  font-family: Montserrat;
+}
+
+.panel button:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
